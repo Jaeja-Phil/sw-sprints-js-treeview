@@ -4,11 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 <body>
   <div id='root'>
-    <div>이곳에 폴더 형식의 뷰를 만들어 보세요!</div>
+    <div>이곳에 폴더 형식의 뷰를 만들어 보세요!</div> <!-- 이 태그는 지워주세요 -->
   </div>
-  <script src="./index.js"></script>
+  <div id="mocha"></div>
+ 
+  <script src="../node_modules/chai/chai.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <script src="./test//test.js"></script>
+  <script>
+    mocha.run();
+  </script>
 </body>
 </html>
