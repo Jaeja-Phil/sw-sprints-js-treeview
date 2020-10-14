@@ -156,16 +156,10 @@ const menu = [
     type: 'group',
     name: '카드',
     children: [
-      {
-        type: 'group',
-        name: '카드',
-        children: [
-          { type: 'item', name: '10000원권' },
-          { type: 'item', name: '30000원권' },
-          { type: 'item', name: '50000원권' },
-          { type: 'item', name: '100000원권' },
-        ],
-      },
+      { type: 'item', name: '10000원권' },
+      { type: 'item', name: '30000원권' },
+      { type: 'item', name: '50000원권' },
+      { type: 'item', name: '100000원권' },
     ],
   },
 ];
