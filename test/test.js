@@ -9,7 +9,7 @@ describe('body의 첫번째 엘리먼트인 div 안에 tree-view를 구성합니
   });
 
   it('root라는 id를 가진 div 태그 안에 tree-view를 구현해야 합니다', () => {
-    expect(body.children.length).to.equal(8);
+    expect(body.children.length).to.equal(10);
 
     const root = document.getElementById('root');
     expect(root.children).to.exist;
