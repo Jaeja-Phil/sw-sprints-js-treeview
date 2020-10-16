@@ -4,7 +4,6 @@ describe('body의 첫번째 엘리먼트인 div 안에 tree-view를 구성합니
   const body = document.body;
 
   it('body의 첫번째 엘리먼트는 root 라는 id를 가져야 합니다', () => {
-    // fix me
     expect(body.children[1].id).to.equal('root');
   });
 
@@ -94,6 +93,7 @@ describe('data.js에 있는 menu를 사용해 tree-view를 구성합니다', () 
           traverseDom(node[i].children);
         } else {
           if (node[i].matches('li') && liNameList.includes(node[i].textContent)) {
+            liNameList.splice(liNameList.indexOf(node[i].textContent), 1);
             count++;
           }
         }
@@ -160,6 +160,7 @@ describe('data.js에 있는 menu를 사용해 tree-view를 구성합니다', () 
     let count = 0;
     traverseDom(root.children);
 
-    expect(count).to.equal(liNameList.length);
+    expect(count).to.equal(55);
+    expect(liNameList.length).to.equal(0);
   });
 });
