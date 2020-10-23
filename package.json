@@ -1,24 +1,16 @@
 {
   "name": "sw-sprints-js-treeview",
   "version": "1.0.0",
-  "description": "",
-  "main": "data.js",
+  "author": "Phillip Choi <jaeja.phil@gmail.com>",
+  "description": "sw_sprints_js_treeUI",
+  "main": "fix_me.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha __test__/index.test.js",
+    "submit": "node .travis/submit.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jaeja-Phil/sw-sprints-js-treeview.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jaeja-Phil/sw-sprints-js-treeview/issues"
-  },
-  "homepage": "https://github.com/Jaeja-Phil/sw-sprints-js-treeview#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "jsdom": "^16.4.0",
     "mocha": "^8.1.3"
   }
 }
